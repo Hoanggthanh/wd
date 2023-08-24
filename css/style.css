@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+body{
+ font-family: 'Josefin Sans', sans-serif;font-size: 16px;color: #666666;margin: 0
+}
+header{
+	width: 100%;height: 60px;background-color:white;box-shadow: 5px 5px 5px lightgray;z-index: 100;position: fixed;left: 0;top: 0
+}
+.logo{padding-left: 200px;padding-top: 10px}
+.menu{padding-top: 20px;margin-right: 50px}
+.menu ul{
+	padding: 0;margin: 0;list-style: none;display: flex
+}
+.menu ul li a{
+	padding: 8px 25px;border-radius: 20px
+}
+.menu ul li a:hover{
+	background-color: #4197B1;color: white
+}
+.menu ul li .menu-item.active{
+	background-color: #4197B1;color: white
+}
+#home{
+	width: 100%;min-height: 1000px;padding-top: 250px;padding-left: 400px;background: #F7E8D2;background: url("../img/banner-noi-that-go-thong-desktop.png");background-repeat: no-repeat;background-position: top right;
+}
+#about{
+	width: 100%;min-height: 1000px;padding-top: 100px;background: #F7E8D2
+}
+
+.so{
+	font-size: 120px;color: black;font-weight: bold
+}
+.year{
+	padding-left: 10px;letter-spacing: 20px
+}
+#skill{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #E7B2FF;
+  display: flex;border-radius: 10px
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width: 50%;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color:#B667F1;color:white
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color:#9232F0;color: white
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.progress{
+	width: 100%;height: 8px;background-color: #BBBBBB;border-radius: 10px;margin-bottom: 15px;overflow: hidden
+}
+.bar{
+	height: 8px;border-radius: 10px;
+}
+#services{
+	width: 100%;min-height: 1000px;padding-top: 100px;background: #F7E8D2
+}
+.service{
+	width: 100%;height: 150px;display: flex
+}
+.service-icon{
+	width: 180px;height: 150px;border: 1px solid none;display: flex;justify-content: center;align-items: center
+}
+
+.service-icon i{
+	font-size: 40px;color: red;transition: all 0.6s
+}
+.service-icon img{
+	width: 180px;transition: all 0.6s
+}
+.service-text{
+	width: 100%;height: 150px;padding: 15px;transition: all 0.6s
+}
+.service:hover .service-icon i{
+	font-size: 60px
+}
+.service:hover .service-icon img{
+	width: 60px
+}
+.service:hover .service-text{
+	background-color: red;color: white
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+/* Style the tab */
+#projects .tab {
+  overflow: hidden;
+  border: none;
+  background-color: none;
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+  border-bottom: 2px solid white;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px 0;margin-left: 25px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+ color: #C064F7;border-bottom: 2px solid #C064F7
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  color: #7B08B5;border-bottom: 2px solid #7B08B5
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.box{display: flex;justify-content: space-between;align-items: center}
+#projects .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#projects .owl-nav [class*='owl-'] {
+	font-size:35px;color: black;width: 40px;
+}
+
+#projects .owl-nav .owl-next{ position:absolute; right:-4%;}
+#projects .owl-nav .owl-prev{ position:absolute; left:-4%;}
+#projects .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:#C182FF;
+      text-decoration: none; }
+
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color: #F7E8D2;
+}
+#testimonial .cilent{
+	text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 10px 50px
+}
+#testimonial .cilent img{
+	width: 100px;height: 100px;border-radius: 50%;
+}
+#testimonial .vien{
+	width: 100px;height: 100px;border-radius: 50%;border: 1px solid white;padding: 7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#testimonial .owl-nav [class*='owl-'] {
+	font-size:35px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:yellow;
+      text-decoration: none; }
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+#contact .vien-chan{
+	padding-bottom: 15px;font-size: 25px;color: black;border-bottom: 1px solid #525252;
+}
+.css
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.tieu-de{
+	color: black;font-size: 40px
+}
+.text-vang{
+	color: #FF9600
+}
+.text-den{
+	color: black
+}
+.bo-goc{
+	border-radius: 10px
+}
+.text-do{
+	color: red
+}
